@@ -1,0 +1,39 @@
+name: smart_expense_tracker
+description: A smart expense tracking app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Database - UPDATED with correct Windows version
+  sqflite: ^2.4.0
+  sqflite_common_ffi: ^2.4.0+1  # CHANGED to the suggested working version
+  path_provider: ^2.1.1
+  path: ^1.8.3
+
+  # State Management
+  provider: ^6.1.2
+
+  # Charts
+  fl_chart: ^0.66.2
+
+  # Date formatting
+  intl: ^0.19.0
+
+  # Form builder
+  flutter_form_builder: ^10.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
