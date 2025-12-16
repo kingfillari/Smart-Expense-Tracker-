@@ -1,6 +1,6 @@
 ## Smart Expense Tracker 💰
 A feature-rich, cross-platform expense tracking application built with Flutter. Track your spending, visualize your finances, and manage your budget with a beautiful, intuitive interface.
-
+```bash
 https://img.shields.io/badge/Flutter-3.38.5-blue.svg
 https://img.shields.io/badge/Platform-Windows%2520%257C%2520Web%2520%257C%2520Android-brightgreen.svg
 https://img.shields.io/badge/License-MIT-yellow.svg
@@ -52,16 +52,19 @@ VS Code (recommended) with Flutter and Dart extensions
 Installation
 Clone the repository
 
-bash
+```bash
 git clone https://github.com/kingfillari/Smart-Expense-Tracker-.git
+
 cd smart_expense_tracker
+
 Install dependencies
 
-bash
+```bash
 flutter pub get
+
 Run the application
 
-bash
+```bash
 # For Windows desktop
 flutter run -d windows
 
@@ -71,7 +74,8 @@ flutter run -d chrome
 # For Android (requires Android SDK setup)
 flutter run -d android
 ## 🏗️ Project Architecture
-text
+
+```bash
 smart_expense_tracker/
 ├── lib/
 │   ├── models/          # Data models (Expense, etc.)
@@ -84,7 +88,8 @@ smart_expense_tracker/
 ├── assets/              # Images, fonts, icons
 ├── windows/             # Windows-specific configuration
 └── pubspec.yaml         # Dependencies and metadata
-Key Dependencies
+
+## Key Dependencies
 Package	Purpose	Version
 provider	State management	^6.1.2
 sqflite + sqflite_common_ffi	Local SQLite database	^2.4.0
@@ -114,6 +119,7 @@ Form validation with error messages
 ## 🗄️ Database Schema
 The application uses SQLite with the following schema:
 
+```bash
 sql
 CREATE TABLE expenses(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -131,7 +137,7 @@ Database Location: C:\Users\[Username]\AppData\Roaming\smart_expense_tracker\exp
 
 🔧 Development
 Building for Release
-bash
+```bash
 # Windows
 flutter build windows --release
 
@@ -140,7 +146,8 @@ flutter build web --release
 
 # Android
 flutter build apk --release
-Code Structure Guidelines
+
+### Code Structure Guidelines
 Models: Define data structures and conversion methods
 
 Services: Handle database operations and external APIs
